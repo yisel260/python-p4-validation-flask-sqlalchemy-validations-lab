@@ -49,7 +49,8 @@ class TestAuthor:
             with pytest.raises(ValueError):
                 LOGGER.info('testing short phone number')
                 author = Author(name="Jane Author", phone_number="3311")
-
+                
+                print("Author object created")
             with pytest.raises(ValueError):
                 LOGGER.info("testing long phone number")
                 author2 = Author(name="Jane Author", phone_number="3312212121212121")
